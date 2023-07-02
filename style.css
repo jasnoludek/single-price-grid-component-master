@@ -93,6 +93,7 @@ body {
 .grid-container {
     margin: 3rem 1rem;
     border-radius: 8px;
+    max-width: 38rem;
     overflow: hidden;
     box-shadow: 0 0.5rem 0.75rem 0.5rem hsl(218, 22%, 85%);
 }
@@ -164,7 +165,7 @@ h3 {
 .btn {
     text-decoration: none;
     width: 100%;
-    padding: 0.875rem 0;
+    padding: 0.66rem 0;
     background-color: var(--brt-yellow);
     color: hsl(0, 0%, 100%);
     text-align: center;
@@ -198,5 +199,29 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (min-width: 48rem) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    div {
+        gap: 1rem;
+        padding: 1.75rem 2rem;
+    }
+
+    .sec-1 {
+        grid-column: span 2;;
+    }
+
+    .sec-2 {
+        grid-column: span 1;
+    }
+
+    .sec-3 {
+        grid-column: span 1;
+    }
 
 
